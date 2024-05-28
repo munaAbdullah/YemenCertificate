@@ -37,9 +37,11 @@ function App() {
   const [hash, sethash] = useState();
   const [inHash, setinHash] = useState();
   const valid = async () => {
-    const t = await document.getElementById("inputHash").value.toString();
+  const t = await document.getElementById("inputHash").value.toString();
+    if (t)
+    {
     setinHash(t);
-    //const c = await contract.methods.verifyDocument(t).call();
+        //const c = await contract.methods.verifyDocument(t).call();
     let c= await contract.verifyDocument(t);
     
     if (c) {
@@ -49,6 +51,8 @@ function App() {
     else {
       setStuName('');
     }
+    }
+     else {window.location.reload()}
   }
   return (
     <div className='App' >
