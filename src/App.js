@@ -94,7 +94,7 @@ function App() {
                 <h5 className="card-title ">{stuName}</h5>
               </div>
             </div>;
-          } else if (inHash==='' || (stuName === '')) {
+          } else if (inHash!='' && (stuName === '')) {
             return <div className=" input-group mb-3 align-items-center justify-content-center">
               <label className=' align-center' style={{ fontSize: '30px', fontweight: 'bold', backgroundColor: 'red' }} >Certificate's hash is not found </label>
             </div>;
