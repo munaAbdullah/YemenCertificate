@@ -45,7 +45,7 @@ function App() {
     
     if (c) {
       setStuName(c);
-      sethash(`https://ipfs.filebase.io/ipfs/${t}`);
+      setCertPath(`https://ipfs.filebase.io/ipfs/${t}`);
     }
     else {
       setStuName('');
