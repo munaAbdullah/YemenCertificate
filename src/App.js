@@ -89,7 +89,7 @@ function App() {
           if (stuName) {
             return <div className="card text-center">
               <div className="card-body align-items-center justify-content-center">
-                <img src={certPath} alt ="certimge" width="100%" height="100" ></img>
+                <img src={certPath} alt ="certimge" width="50%" height="100" ></img>
                 <h5 className="card-title ">{stuName}</h5>
               </div>
             </div>;
